@@ -119,9 +119,9 @@ while(video.isOpened()):
         line_thickness=8,
         min_score_thresh=0.60)
 
-    resize = cv2.resize(frame, None, fx=scaling_factorx, fy=scaling_factory, interpolation=cv2.INTER_AREA)
+    #resize = cv2.resize(frame, None, fx=scaling_factorx, fy=scaling_factory, interpolation=cv2.INTER_AREA)
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow('Object detector', resize)
+    cv2.imshow('Object detector', frame)
 
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):

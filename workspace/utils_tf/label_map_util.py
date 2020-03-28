@@ -24,8 +24,8 @@ from six import string_types
 from six.moves import range
 import tensorflow as tf
 from google.protobuf import text_format
-from object_detection.protos import string_int_label_map_pb2
-
+#from object_detection.protos import string_int_label_map_pb2
+from . import string_int_label_map_pb2
 
 def _validate_label_map(label_map):
   """Checks if a label map is valid.
